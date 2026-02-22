@@ -1,4 +1,4 @@
-const roles = [" Software Developer",".NET Developer"," Promopt Engineer"," Cloud Enthusiast"];
+const roles = ["Software Engineer",".NET Developer"," Promopt Engineer"," Cloud Enthusiast"];
 let i = 0;
 let j = 0;
 let currentRole = "";
