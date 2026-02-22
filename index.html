@@ -1,53 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Satyam Jha | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Satyam Jha | .NET & Azure DevOps Engineer</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<section id="header">
-  <h1>Satyam Jha</h1>
-  <p>.NET & Azure Developer</p>
-</section>
-
-<section id="about">
-  <h2>About Me</h2>
-  <p>I’m a backend developer focused on .NET and cloud technologies...</p>
-</section>
-
-<section id="skills">
-  <h2>Skills</h2>
+<nav>
+  <h2>Satyam Jha</h2>
   <ul>
-    <li>C#</li>
-    <li>ASP.NET Core</li>
-    <li>Azure DevOps</li>
-    <li>Terraform</li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
+</nav>
+
+<section class="hero">
+  <h1>Hi, I'm <span class="highlight">Satyam Jha</span></h1>
+  <h2><span id="typing"></span></h2>
+  <a href="doc/Satyam_CV_328.pdf" download class="btn">Download Resume</a>
 </section>
 
-<section id="experience">
-  <h2>Experience</h2>
-  <div>
-    <h3>VRS Software</h3>
-    <p>Backend Developer (Year – Present)</p>
-    <p>What you worked on...</p>
+<section id="about" class="section fade-in">
+  <h2>About Me</h2>
+  <p>
+    Backend Developer with experience in .NET, Azure and DevOps. 
+    I design scalable systems, CI/CD pipelines and cloud infrastructure.
+  </p>
+</section>
+
+<section id="skills" class="section fade-in">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div>.NET Core</div>
+    <div>Azure DevOps</div>
+    <div>Terraform</div>
+    <div>SQL Server</div>
+    <div>CI/CD</div>
+    <div>Docker</div>
   </div>
 </section>
 
-<section id="projects">
+<section id="projects" class="section fade-in">
   <h2>Projects</h2>
-  <div>
-    <h3>Project Name</h3>
-    <p>Description + <a href="https://github.com/...">GitHub</a></p>
-  </div>
+  <p>Coming Soon — Azure DevOps end-to-end project showcase.</p>
 </section>
 
-<section id="contact">
+<section id="contact" class="section fade-in">
   <h2>Contact</h2>
-  <p>Email: your-email@example.com</p>
+  <p>Email: yourmail@email.com</p>
+  <p>LinkedIn: linkedin.com/in/yourprofile</p>
 </section>
 
+<script src="script.js"></script>
 </body>
 </html>
