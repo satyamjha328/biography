@@ -100,11 +100,30 @@ nav {
     font-weight: 800;
 }
 
-.hero-left h2 {
-    font-size: 1.6rem;
-    background: linear-gradient(90deg, #4da3ff, #7cc4ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.hero-subtitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+/* White underline */
+.hero-subtitle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    opacity: 0.8;
+}
+
+/* Typing text color */
+#typing {
+    color: #4da3ff;
 }
 
 .hero-left p {
