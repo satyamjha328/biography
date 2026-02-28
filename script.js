@@ -1,28 +1,24 @@
-// Smooth scroll for in-page anchors
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', (e) => {
-    const target = document.querySelector(a.getAttribute('href'));
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
+// Scroll Reveal using Intersection Observer
+
+const reveals = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('active');
+        }
+    });
+}, { threshold: 0.15 });
+
+reveals.forEach(reveal => {
+    observer.observe(reveal);
 });
 
-// Simple reveal on scroll (optional)
-const reveal = (entries, obs) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-      e.target.style.opacity = 1;
-      e.target.style.transform = 'translateY(0)';
-      obs.unobserve(e.target);
-    }
-  });
-};
-document.querySelectorAll('.section').forEach(sec => {
-  sec.style.opacity = 0;
-  sec.style.transform = 'translateY(20px)';
-  const io = new IntersectionObserver(reveal, { threshold: 0.15 });
-  io.observe(sec);
+// Smooth Scroll Enhancement
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href'))
+            .scrollIntoView({ behavior: 'smooth' });
+    });
 });
