@@ -65,10 +65,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const toggle = document.getElementById("menu-toggle");
   const navLinks = document.getElementById("nav-links");
 
-  toggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
+  const navItems = navLinks.querySelectorAll("a");
 
+navItems.forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+  });
+});
   /* Scroll To Top */
   const scrollBtn = document.getElementById("scrollTopBtn");
 
