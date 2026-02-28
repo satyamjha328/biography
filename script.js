@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+  /* Typing Animation */
   const roles = [
     "Software Developer – .NET",
     "Backend Engineer",
@@ -37,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
     typeEffect();
   }
 
+  /* Reveal Animation */
   const reveals = document.querySelectorAll(".reveal");
-
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -49,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   reveals.forEach(el => observer.observe(el));
 
+  /* Navbar Scroll Effect */
   const header = document.querySelector("header");
 
   window.addEventListener("scroll", () => {
@@ -59,13 +61,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  /* Mobile Menu Toggle */
+  const toggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
 
-const toggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
 
-if (toggle) {
-    toggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-    });
-}
+  /* Scroll To Top */
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollBtn.classList.add("show");
+    } else {
+      scrollBtn.classList.remove("show");
+    }
+  });
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
 });
