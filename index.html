@@ -1,63 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Satyam Jha | Software Developer </title>
-<link rel="stylesheet" href="./style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Satyam Jha – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="name">Satyam Jha</h1>
+      <p class="role">Software Developer – .NET | Backend Engineer</p>
+      <a href="Satyam_Jha_Resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+  </header>
 
-<nav>
-  <h2>Satyam Jha</h2>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <main id="content" class="container">
 
-<section class="hero">
-  <h1>Hi, I'm <span class="highlight">Satyam Jha</span></h1>
-  <h2><span id="typing"></span></h2>
-  <a href="doc/Satyam_CV_328.pdf" download class="btn">Download Resume</a>
-</section>
+    <!-- Professional Summary -->
+    <section id="summary" class="section">
+      <h2>Professional Summary</h2>
+      <p>
+        Backend-focused .NET Software Developer with 4.9+ years of experience designing, developing, and maintaining scalable enterprise systems. Expertise in REST APIs, SQL performance optimization, microservices, CI/CD pipelines, and Azure DevOps. Strong background in SaaS platforms, ERP systems, and production-ready deployments with a focus on clean architecture, SOLID, and maintainability.
+      </p>
+    </section>
 
-<section id="about" class="section fade-in">
-  <h2>About Me</h2>
-  <p>
-    Software developer with more than 4.8 years of hands-on experience in .NET technologies, 
-    including C#, .NET Core, ASP.NET, VB.NET, Entity Framework Core ,Web API ,MVC and SQL Server.
-    Seeking an opportunity to utilize and expand my knowledge and skills while contributing to organizational growth.
-  </p>
-</section>
+    <!-- Core Skills -->
+    <section id="skills" class="section">
+      <h2>Core Skills</h2>
+      <ul class="skills-grid" aria-label="Core technical skills">
+        <li><strong>Backend:</strong> C#, ASP.NET Core, Web API, Entity Framework, LINQ</li>
+        <li><strong>Frontend:</strong> HTML, CSS, JavaScript, jQuery, Bootstrap, ReactJS (Basics)</li>
+        <li><strong>Database:</strong> SQL Server, PostgreSQL, Stored Procedures, Query Optimization</li>
+        <li><strong>Cloud & DevOps:</strong> Azure DevOps, CI/CD Pipelines, Git, Azure</li>
+        <li><strong>Tools:</strong> SSMS, Postman, VS Studio, VS Code, Crystal Reports, SQL Profiler</li>
+        <li><strong>Concepts:</strong> OOP, SOLID, Microservices (Basics), Agile/Scrum</li>
+      </ul>
+    </section>
 
-<section id="skills" class="section fade-in">
-  <h2>Skills</h2>
-  <div class="grid">
-    <div>.NET Core</div>
-    <div>Azure DevOps</div>
-    <div>Web API</div>
-    <div>SQL Server</div>
-    <div>ASP.NET MVC</div>
-    <div>ReactJS</div>
-  </div>
-</section>
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <h2>Professional Experience</h2>
 
-<section id="projects" class="section fade-in">
-  <h2>Projects</h2>
-  <p>Coming Soon — Azure DevOps end-to-end project showcase.</p>
-</section>
+      <article class="job">
+        <h3>Web Developer (Contract) – IQUEST Management Consultants</h3>
+        <p class="muted">Client: Irth Solutions India Pvt. Ltd. | Pune, Maharashtra | Oct 2025 – Present</p>
+        <ul>
+          <li>Maintaining and enhancing the Irth Land Management (ILM) enterprise SaaS platform.</li>
+          <li>Collaborated with stakeholders for scalable feature delivery.</li>
+          <li>Worked in Agile sprints using Azure Boards for task management.</li>
+          <li>Ensured code quality via unit testing and clean architecture principles.</li>
+        </ul>
+      </article>
 
-<section id="contact" class="section fade-in">
-  <h2>Contact</h2>
-  <p>Mobile:+91 7620395345</p>
-  <p>Email: Satyamjha328@gmail.com</p>
-  <p>LinkedIn: https://www.linkedin.com/in/satyamjha328/</p>
-</section>
+      <article class="job">
+        <h3>Software Developer – VRS Software</h3>
+        <p class="muted">Mumbai, Maharashtra | May 2022 – Aug 2025</p>
+        <ul>
+          <li>Developed end-to-end retail & inventory management systems using C#, VB.NET, SQL Server.</li>
+          <li>Built REST APIs with ASP.NET Core, EF, and SQL Server.</li>
+          <li>Applied SOLID principles improving modularity and maintainability.</li>
+          <li>Integrated third-party APIs for payments, logistics, and accounting.</li>
+          <li>Created SSRS/Crystal Reports and improved SQL query performance by 30–40%.</li>
+        </ul>
+      </article>
 
-<script src="script.js"></script>
+      <article class="job">
+        <h3>Software Developer – FacetLeon Solutions LLP</h3>
+        <p class="muted">Mumbai, Maharashtra | Apr 2021 – Apr 2022</p>
+        <ul>
+          <li>Maintained legacy .NET MVC applications ensuring stability & performance.</li>
+          <li>Developed Crystal Reports & SSRS modules.</li>
+          <li>Designed GST-enabled POS with barcode inventory tracking.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2>Key Projects</h2>
+      <ul class="projects-list">
+        <li>Irth Land Management (ILM) – SaaS platform for land & asset management.</li>
+        <li>Retail Billing & Garment Manufacturing ERP – Production, stock & billing modules.</li>
+        <li>Order Booking System – Real-time inventory sync platform.</li>
+        <li>Diamond ERP System – Multi-module ERP with reporting.</li>
+        <li>Online College Admission System – Full-stack student workflow automation.</li>
+      </ul>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <ul class="edu-list">
+        <li>B.Sc. Computer Science – University of Mumbai</li>
+        <li>HSC – Maharashtra State Board</li>
+        <li>SSC – Maharashtra State Board</li>
+      </ul>
+      <h3>Certifications</h3>
+      <ul class="cert-list">
+        <li>GitHub Copilot</li>
+        <li>C#</li>
+        <li>SQL Server</li>
+        <li>Prompt Engineering</li>
+      </ul>
+    </section>
+
+    <!-- Languages -->
+    <section id="about" class="section">
+      <h2>Languages</h2>
+      <ul class="langs">
+        <li>English</li>
+        <li>Hindi</li>
+        <li>Marathi</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Satayam Jha. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
