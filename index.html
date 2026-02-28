@@ -1,128 +1,242 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Satyam Jha – Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name - Portfolio</title>
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
+  <!-- Theme toggle -->
+  <button id="theme-toggle" aria-label="Toggle theme" class="theme-toggle">🌗</button>
+
+  <!-- Header / Nav -->
   <header class="site-header">
-    <div class="container header-inner">
-      <h1 class="name">Satyam Jha</h1>
-      <p class="role">Software Developer – .NET | Backend Engineer</p>
-      <a href="Satyam_Jha_Resume.pdf" class="btn" download>Download Resume</a>
+    <div class="container nav-wrap">
+      <a href="#home" class="brand">Your Name</a>
+      <nav aria-label="Main" class="main-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main id="content" class="container">
+  <!-- Hero -->
+  <section id="home" class="hero section">
+    <div class="container hero-inner">
+      <div class="hero-copy" aria-label="Intro">
+        <h1>Hello, I'm <span class="accent">Your Name</span></h1>
+        <p class="lead">Frontend Developer • UI/UX Enthusiast • Problem Solver</p>
+        <div class="cta-row">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+          <a href="assets/Your_Resume.pdf" class="btn" download>Download Resume</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Illustration">
+        <!-- Simple decorative SVG or image -->
+        <svg width="420" height="260" viewBox="0 0 420 260" role="img" aria-label="Abstract art">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+              <stop stop-color="#4f46e5" offset="0"/>
+              <stop stop-color="#06b6d4" offset="1"/>
+            </linearGradient>
+          </defs>
+          <rect width="420" height="260" fill="#0b1020" opacity="0.0"/>
+          <circle cx="70" cy="70" r="40" fill="url(#g)" opacity="0.8"/>
+          <circle cx="180" cy="100" r="60" fill="url(#g)" opacity="0.5"/>
+          <rect x="230" y="40" width="150" height="120" rx="12" fill="url(#g)" opacity="0.25"/>
+        </svg>
+      </div>
+    </div>
+  </section>
 
-    <!-- Professional Summary -->
-    <section id="summary" class="section">
-      <h2>Professional Summary</h2>
-      <p>
-        Backend-focused .NET Software Developer with 4.9+ years of experience designing, developing, and maintaining scalable enterprise systems. Expertise in REST APIs, SQL performance optimization, microservices, CI/CD pipelines, and Azure DevOps. Strong background in SaaS platforms, ERP systems, and production-ready deployments with a focus on clean architecture, SOLID, and maintainability.
-      </p>
-    </section>
+  <!-- About -->
+  <section id="about" class="section section-light">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="lead">I'm a passionate frontend developer focused on building accessible, fast, and delightful user experiences.</p>
+      <div class="grid two-col">
+        <div>
+          <h3>Experience Snapshot</h3>
+          <ul class="bullet-list">
+            <li>Built responsive web apps with clean UX</li>
+            <li>Collaborated in cross-functional teams</li>
+            <li>Optimized performance and accessibility</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tools & Tech</h3>
+          <div class="tools">
+            <span class="tool-pill">HTML</span><span class="tool-pill">CSS</span><span class="tool-pill">JavaScript</span>
+            <span class="tool-pill">React</span><span class="tool-pill">Tailwind</span><span class="tool-pill">Figma</span>
+            <span class="tool-pill">Git</span><span class="tool-pill">Accessibility</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Core Skills -->
-    <section id="skills" class="section">
-      <h2>Core Skills</h2>
-      <ul class="skills-grid" aria-label="Core technical skills">
-        <li><strong>Backend:</strong> C#, ASP.NET Core, Web API, Entity Framework, LINQ</li>
-        <li><strong>Frontend:</strong> HTML, CSS, JavaScript, jQuery, Bootstrap, ReactJS (Basics)</li>
-        <li><strong>Database:</strong> SQL Server, PostgreSQL, Stored Procedures, Query Optimization</li>
-        <li><strong>Cloud & DevOps:</strong> Azure DevOps, CI/CD Pipelines, Git, Azure</li>
-        <li><strong>Tools:</strong> SSMS, Postman, VS Studio, VS Code, Crystal Reports, SQL Profiler</li>
-        <li><strong>Concepts:</strong> OOP, SOLID, Microservices (Basics), Agile/Scrum</li>
-      </ul>
-    </section>
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <p class="lead">Selected work highlighting impact, tech, and outcomes.</p>
 
-    <!-- Experience -->
-    <section id="experience" class="section">
-      <h2>Professional Experience</h2>
+      <div class="filters" id="project-filters" aria-label="Project filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX</button>
+        <button class="filter-btn" data-filter="react">React</button>
+      </div>
 
-      <article class="job">
-        <h3>Web Developer (Contract) – IQUEST Management Consultants</h3>
-        <p class="muted">Client: Irth Solutions India Pvt. Ltd. | Pune, Maharashtra | Oct 2025 – Present</p>
-        <ul>
-          <li>Maintaining and enhancing the Irth Land Management (ILM) enterprise SaaS platform.</li>
-          <li>Collaborated with stakeholders for scalable feature delivery.</li>
-          <li>Worked in Agile sprints using Azure Boards for task management.</li>
-          <li>Ensured code quality via unit testing and clean architecture principles.</li>
-        </ul>
-      </article>
+      <div class="grid three-col" id="project-grid">
+        <!-- Card 1 -->
+        <article class="card" data-category="frontend uiux" tabindex="0">
+          <img src="assets/project1.png" alt="Project 1 screenshot" />
+          <div class="card-body">
+            <h3>Project One</h3>
+            <p class="muted">A responsive dashboard with real-time data visualizations.</p>
+            <div class="tag-row">
+              <span class="tag">React</span><span class="tag">D3</span><span class="tag">Tailwind</span>
+            </div>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card" data-category="uiux frontend" tabindex="0">
+          <img src="assets/project2.png" alt="Project 2 screenshot" />
+          <div class="card-body">
+            <h3>Project Two</h3>
+            <p class="muted">Mobile-first ecommerce product discovery experience.</p>
+            <div class="tag-row">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+            </div>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card" data-category="react frontend" tabindex="0">
+          <img src="assets/project3.png" alt="Project 3 screenshot" />
+          <div class="card-body">
+            <h3>Project Three</h3>
+            <p class="muted">Portfolio builder with drag-and-drop content blocks.</p>
+            <div class="tag-row">
+              <span class="tag">React</span><span class="tag">Vite</span><span class="tag">GSAP</span>
+            </div>
+          </div>
+        </article>
+        <!-- Add more cards as needed -->
+      </div>
+    </div>
+  </section>
 
-      <article class="job">
-        <h3>Software Developer – VRS Software</h3>
-        <p class="muted">Mumbai, Maharashtra | May 2022 – Aug 2025</p>
-        <ul>
-          <li>Developed end-to-end retail & inventory management systems using C#, VB.NET, SQL Server.</li>
-          <li>Built REST APIs with ASP.NET Core, EF, and SQL Server.</li>
-          <li>Applied SOLID principles improving modularity and maintainability.</li>
-          <li>Integrated third-party APIs for payments, logistics, and accounting.</li>
-          <li>Created SSRS/Crystal Reports and improved SQL query performance by 30–40%.</li>
-        </ul>
-      </article>
+  <!-- Experience -->
+  <section id="experience" class="section section-light">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="timeline" aria-label="Work timeline">
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div class="content">
+            <h3>Frontend Developer, ABC Corp</h3>
+            <span class="muted">Jan 2022 – Present</span>
+            <p>Built scalable UI components and improved page performance by 30%.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div class="content">
+            <h3>Junior Developer, XYZ Studio</h3>
+            <span class="muted">Jun 2020 – Dec 2021</span>
+            <p>Collaborated on client projects, shipped accessible interfaces.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <article class="job">
-        <h3>Software Developer – FacetLeon Solutions LLP</h3>
-        <p class="muted">Mumbai, Maharashtra | Apr 2021 – Apr 2022</p>
-        <ul>
-          <li>Maintained legacy .NET MVC applications ensuring stability & performance.</li>
-          <li>Developed Crystal Reports & SSRS modules.</li>
-          <li>Designed GST-enabled POS with barcode inventory tracking.</li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <h2>Key Projects</h2>
-      <ul class="projects-list">
-        <li>Irth Land Management (ILM) – SaaS platform for land & asset management.</li>
-        <li>Retail Billing & Garment Manufacturing ERP – Production, stock & billing modules.</li>
-        <li>Order Booking System – Real-time inventory sync platform.</li>
-        <li>Diamond ERP System – Multi-module ERP with reporting.</li>
-        <li>Online College Admission System – Full-stack student workflow automation.</li>
-      </ul>
-    </section>
-
-    <!-- Education & Certifications -->
-    <section id="education" class="section">
+  <!-- Education -->
+  <section id="education" class="section">
+    <div class="container">
       <h2>Education</h2>
       <ul class="edu-list">
-        <li>B.Sc. Computer Science – University of Mumbai</li>
-        <li>HSC – Maharashtra State Board</li>
-        <li>SSC – Maharashtra State Board</li>
+        <li><strong>BS in Computer Science</strong>, University A (2016-2020)</li>
+        <li><strong>Certifications</strong> – Udemy, Coursera, etc.</li>
       </ul>
-      <h3>Certifications</h3>
-      <ul class="cert-list">
-        <li>GitHub Copilot</li>
-        <li>C#</li>
-        <li>SQL Server</li>
-        <li>Prompt Engineering</li>
-      </ul>
-    </section>
+    </div>
+  </section>
 
-    <!-- Languages -->
-    <section id="about" class="section">
-      <h2>Languages</h2>
-      <ul class="langs">
-        <li>English</li>
-        <li>Hindi</li>
-        <li>Marathi</li>
-      </ul>
-    </section>
+  <!-- Skills -->
+  <section id="skills" class="section section-light">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <div class="skill-item">
+            <span>React</span>
+            <div class="progress" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div>
+          </div>
+          <div class="skill-item">
+            <span>HTML/CSS</span>
+            <div class="progress" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
+          </div>
+          <div class="skill-item">
+            <span>Tailwind</span>
+            <div class="progress" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <div class="tag-row">
+            <span class="tag">Git</span><span class="tag">Webpack</span><span class="tag">Figma</span><span class="tag">Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  </main>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="lead">Interested in working together? Send a message and I’ll reply soon.</p>
+      <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST" class="contact-form" novalidate>
+        <div class="grid two-col">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required placeholder="Your name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="_replyto" required placeholder="you@example.com" />
+          </label>
+        </div>
+        <label class="full">
+          <span>Message</span>
+          <textarea name="message" rows="5" required placeholder="Your message..."></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+      <div class="contact-info" aria-label="Other contact info">
+        <p>Email: youremail@example.com</p>
+        <p>LinkedIn / GitHub / Twitter handles</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <p>© Satayam Jha. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 </html>
