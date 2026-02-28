@@ -1,11 +1,5 @@
-// ===============================
-// DOM Ready Safety
-// ===============================
 document.addEventListener("DOMContentLoaded", function () {
 
-  // ===============================
-  // Typing Animation
-  // ===============================
   const roles = [
     "Software Developer – .NET",
     "Backend Engineer",
@@ -43,9 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
     typeEffect();
   }
 
-  // ===============================
-  // Scroll Reveal Animation
-  // ===============================
   const reveals = document.querySelectorAll(".reveal");
 
   const observer = new IntersectionObserver((entries) => {
@@ -58,9 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   reveals.forEach(el => observer.observe(el));
 
-  // ===============================
-  // Smooth Scroll
-  // ===============================
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -71,23 +59,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // ===============================
-  // Parallax Glow Effect
-  // ===============================
   const glow = document.querySelector(".hero-glow");
 
   if (glow) {
     document.addEventListener("mousemove", (e) => {
       const x = (window.innerWidth / 2 - e.clientX) / 30;
       const y = (window.innerHeight / 2 - e.clientY) / 30;
-
       glow.style.transform = `translate(${x}px, ${y}px)`;
     });
   }
 
-  // ===============================
-  // Navbar Glass Effect
-  // ===============================
   const header = document.querySelector("header");
 
   window.addEventListener("scroll", () => {
@@ -99,19 +80,5 @@ document.addEventListener("DOMContentLoaded", function () {
       header.classList.remove("scrolled");
     }
   });
-
-  document.querySelectorAll(".btn").forEach(button => {
-  button.addEventListener("mousemove", function (e) {
-    const rect = button.getBoundingClientRect();
-    const x = e.clientX - rect.left - rect.width / 2;
-    const y = e.clientY - rect.top - rect.height / 2;
-
-    button.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
-  });
-
-  button.addEventListener("mouseleave", function () {
-    button.style.transform = "translate(0,0)";
-  });
-});
 
 });
