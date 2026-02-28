@@ -185,3 +185,63 @@ nav {
 html {
     scroll-padding-top: 90px;
 }
+/* ============================= */
+/* Mobile Optimization */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    .hero-wrapper {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .hero {
+        padding-top: 120px;
+        min-height: auto;
+    }
+
+    .hero-left h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .hero-left p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-top: 15px;
+    }
+
+    /* Fix buttons stacking */
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    /* Hide glow on mobile */
+    .hero-right {
+        display: none;
+    }
+
+    /* Navbar spacing */
+    nav {
+        padding: 15px 0;
+    }
+
+    .nav-links {
+        gap: 12px;
+        font-size: 0.9rem;
+    }
+
+}
