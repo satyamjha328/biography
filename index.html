@@ -1,242 +1,169 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name - Portfolio</title>
-  <link rel="icon" href="assets/favicon.ico" />
-  <link rel="stylesheet" href="styles/style.css" />
+    <meta charset="UTF-8">
+    <title>Satyam Jha | Software Developer – .NET</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Satyam Jha - Backend-focused .NET Software Developer with expertise in REST APIs, SQL optimization, CI/CD, and Azure DevOps.">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Theme toggle -->
-  <button id="theme-toggle" aria-label="Toggle theme" class="theme-toggle">🌗</button>
 
-  <!-- Header / Nav -->
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="#home" class="brand">Your Name</a>
-      <nav aria-label="Main" class="main-nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+<header>
+    <nav class="container">
+        <div class="logo">Satyam Jha</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-  <!-- Hero -->
-  <section id="home" class="hero section">
-    <div class="container hero-inner">
-      <div class="hero-copy" aria-label="Intro">
-        <h1>Hello, I'm <span class="accent">Your Name</span></h1>
-        <p class="lead">Frontend Developer • UI/UX Enthusiast • Problem Solver</p>
-        <div class="cta-row">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
-          <a href="assets/Your_Resume.pdf" class="btn" download>Download Resume</a>
+<section class="hero">
+    <div class="hero-content reveal">
+        <h1>Satyam Jha</h1>
+        <h2>Software Developer – .NET | Backend Engineer</h2>
+        <p>
+            Backend-focused .NET Software Developer with 4.9+ years of experience in designing, developing, and maintaining scalable enterprise systems. Expertise in REST APIs, SQL performance optimization, microservices, CI/CD pipelines, and Azure DevOps.
+        </p>
+        <div class="cta-buttons">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
         </div>
-      </div>
-      <div class="hero-art" aria-label="Illustration">
-        <!-- Simple decorative SVG or image -->
-        <svg width="420" height="260" viewBox="0 0 420 260" role="img" aria-label="Abstract art">
-          <defs>
-            <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
-              <stop stop-color="#4f46e5" offset="0"/>
-              <stop stop-color="#06b6d4" offset="1"/>
-            </linearGradient>
-          </defs>
-          <rect width="420" height="260" fill="#0b1020" opacity="0.0"/>
-          <circle cx="70" cy="70" r="40" fill="url(#g)" opacity="0.8"/>
-          <circle cx="180" cy="100" r="60" fill="url(#g)" opacity="0.5"/>
-          <rect x="230" y="40" width="150" height="120" rx="12" fill="url(#g)" opacity="0.25"/>
-        </svg>
-      </div>
     </div>
-  </section>
+</section>
 
-  <!-- About -->
-  <section id="about" class="section section-light">
-    <div class="container">
-      <h2>About Me</h2>
-      <p class="lead">I'm a passionate frontend developer focused on building accessible, fast, and delightful user experiences.</p>
-      <div class="grid two-col">
-        <div>
-          <h3>Experience Snapshot</h3>
-          <ul class="bullet-list">
-            <li>Built responsive web apps with clean UX</li>
-            <li>Collaborated in cross-functional teams</li>
-            <li>Optimized performance and accessibility</li>
-          </ul>
+<section id="about" class="section container">
+    <h2 class="section-title reveal">About</h2>
+    <p class="about-text reveal">
+        Strong background in SaaS platforms, ERP systems, and production-ready deployments with a focus on clean architecture, SOLID principles, and maintainability.
+    </p>
+</section>
+
+<section id="skills" class="section container">
+    <h2 class="section-title reveal">Core Skills</h2>
+    <div class="grid">
+
+        <div class="card reveal">
+            <h3>Backend</h3>
+            <p>C#, ASP.NET Core, Web API, Entity Framework, LINQ</p>
         </div>
-        <div>
-          <h3>Tools & Tech</h3>
-          <div class="tools">
-            <span class="tool-pill">HTML</span><span class="tool-pill">CSS</span><span class="tool-pill">JavaScript</span>
-            <span class="tool-pill">React</span><span class="tool-pill">Tailwind</span><span class="tool-pill">Figma</span>
-            <span class="tool-pill">Git</span><span class="tool-pill">Accessibility</span>
-          </div>
+
+        <div class="card reveal">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript, jQuery, Bootstrap, ReactJS (Basics)</p>
         </div>
-      </div>
+
+        <div class="card reveal">
+            <h3>Database</h3>
+            <p>SQL Server, PostgreSQL, Stored Procedures, Query Optimization</p>
+        </div>
+
+        <div class="card reveal">
+            <h3>Cloud & DevOps</h3>
+            <p>Azure DevOps, CI/CD Pipelines, Git, Azure</p>
+        </div>
+
+        <div class="card reveal">
+            <h3>Tools</h3>
+            <p>SSMS, Postman, VS Studio, VS Code, Crystal Reports, SQL Profiler</p>
+        </div>
+
+        <div class="card reveal">
+            <h3>Concepts</h3>
+            <p>OOP, SOLID, Microservices (Basics), Agile/Scrum</p>
+        </div>
+
     </div>
-  </section>
+</section>
 
-  <!-- Projects -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <p class="lead">Selected work highlighting impact, tech, and outcomes.</p>
+<section id="projects" class="section container">
+    <h2 class="section-title reveal">Projects</h2>
+    <div class="grid">
 
-      <div class="filters" id="project-filters" aria-label="Project filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="frontend">Frontend</button>
-        <button class="filter-btn" data-filter="uiux">UI/UX</button>
-        <button class="filter-btn" data-filter="react">React</button>
-      </div>
+        <div class="card reveal">
+            <h3>Irth Land Management (ILM)</h3>
+            <p>SaaS platform for land & asset management.</p>
+        </div>
 
-      <div class="grid three-col" id="project-grid">
-        <!-- Card 1 -->
-        <article class="card" data-category="frontend uiux" tabindex="0">
-          <img src="assets/project1.png" alt="Project 1 screenshot" />
-          <div class="card-body">
-            <h3>Project One</h3>
-            <p class="muted">A responsive dashboard with real-time data visualizations.</p>
-            <div class="tag-row">
-              <span class="tag">React</span><span class="tag">D3</span><span class="tag">Tailwind</span>
-            </div>
-          </div>
-        </article>
-        <!-- Card 2 -->
-        <article class="card" data-category="uiux frontend" tabindex="0">
-          <img src="assets/project2.png" alt="Project 2 screenshot" />
-          <div class="card-body">
-            <h3>Project Two</h3>
-            <p class="muted">Mobile-first ecommerce product discovery experience.</p>
-            <div class="tag-row">
-              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
-            </div>
-          </div>
-        </article>
-        <!-- Card 3 -->
-        <article class="card" data-category="react frontend" tabindex="0">
-          <img src="assets/project3.png" alt="Project 3 screenshot" />
-          <div class="card-body">
-            <h3>Project Three</h3>
-            <p class="muted">Portfolio builder with drag-and-drop content blocks.</p>
-            <div class="tag-row">
-              <span class="tag">React</span><span class="tag">Vite</span><span class="tag">GSAP</span>
-            </div>
-          </div>
-        </article>
-        <!-- Add more cards as needed -->
-      </div>
+        <div class="card reveal">
+            <h3>Retail Billing & Garment Manufacturing ERP</h3>
+            <p>Production, stock & billing modules.</p>
+        </div>
+
+        <div class="card reveal">
+            <h3>Order Booking System</h3>
+            <p>Real-time inventory sync platform.</p>
+        </div>
+
+        <div class="card reveal">
+            <h3>Diamond ERP System</h3>
+            <p>Multi-module ERP with reporting.</p>
+        </div>
+
+        <div class="card reveal">
+            <h3>Online College Admission System</h3>
+            <p>Full-stack student workflow automation.</p>
+        </div>
+
     </div>
-  </section>
+</section>
 
-  <!-- Experience -->
-  <section id="experience" class="section section-light">
-    <div class="container">
-      <h2>Experience</h2>
-      <div class="timeline" aria-label="Work timeline">
+<section id="experience" class="section container">
+    <h2 class="section-title reveal">Professional Experience</h2>
+
+    <div class="timeline reveal">
         <div class="timeline-item">
-          <div class="dot"></div>
-          <div class="content">
-            <h3>Frontend Developer, ABC Corp</h3>
-            <span class="muted">Jan 2022 – Present</span>
-            <p>Built scalable UI components and improved page performance by 30%.</p>
-          </div>
+            <h3>Web Developer (Contract)</h3>
+            <p>IQUEST Management Consultants | Client: Irth Solutions India Pvt. Ltd. | Pune | Oct 2025 – Present</p>
         </div>
+
         <div class="timeline-item">
-          <div class="dot"></div>
-          <div class="content">
-            <h3>Junior Developer, XYZ Studio</h3>
-            <span class="muted">Jun 2020 – Dec 2021</span>
-            <p>Collaborated on client projects, shipped accessible interfaces.</p>
-          </div>
+            <h3>Software Developer</h3>
+            <p>VRS Software | Mumbai | May 2022 – Aug 2025</p>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Education -->
-  <section id="education" class="section">
-    <div class="container">
-      <h2>Education</h2>
-      <ul class="edu-list">
-        <li><strong>BS in Computer Science</strong>, University A (2016-2020)</li>
-        <li><strong>Certifications</strong> – Udemy, Coursera, etc.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="section section-light">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-group">
-          <h3>Frontend</h3>
-          <div class="skill-item">
-            <span>React</span>
-            <div class="progress" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div>
-          </div>
-          <div class="skill-item">
-            <span>HTML/CSS</span>
-            <div class="progress" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
-          </div>
-          <div class="skill-item">
-            <span>Tailwind</span>
-            <div class="progress" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div>
-          </div>
+        <div class="timeline-item">
+            <h3>Software Developer</h3>
+            <p>FacetLeon Solutions LLP | Mumbai | Apr 2021 – Apr 2022</p>
         </div>
-        <div class="skill-group">
-          <h3>Tools</h3>
-          <div class="tag-row">
-            <span class="tag">Git</span><span class="tag">Webpack</span><span class="tag">Figma</span><span class="tag">Figma</span>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p class="lead">Interested in working together? Send a message and I’ll reply soon.</p>
-      <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST" class="contact-form" novalidate>
-        <div class="grid two-col">
-          <label>
-            <span>Name</span>
-            <input type="text" name="name" required placeholder="Your name" />
-          </label>
-          <label>
-            <span>Email</span>
-            <input type="email" name="_replyto" required placeholder="you@example.com" />
-          </label>
-        </div>
-        <label class="full">
-          <span>Message</span>
-          <textarea name="message" rows="5" required placeholder="Your message..."></textarea>
-        </label>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-        <p class="form-status" aria-live="polite"></p>
-      </form>
-      <div class="contact-info" aria-label="Other contact info">
-        <p>Email: youremail@example.com</p>
-        <p>LinkedIn / GitHub / Twitter handles</p>
-      </div>
+<section id="education" class="section container">
+    <h2 class="section-title reveal">Education & Certifications</h2>
+    <div class="card reveal">
+        <p><strong>B.Sc. Computer Science</strong> – University of Mumbai</p>
+        <p>HSC – Maharashtra State Board</p>
+        <p>SSC – Maharashtra State Board</p>
+        <hr>
+        <p><strong>Certifications:</strong> GitHub Copilot, C#, SQL Server, Prompt Engineering</p>
     </div>
-  </section>
+</section>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+<section id="contact" class="section container">
+    <h2 class="section-title reveal">Contact</h2>
+    <div class="card reveal contact-card">
+        <p><strong>Location:</strong> Mumbai</p>
+        <p><strong>Phone:</strong> +91 7620395345</p>
+        <p><strong>Email:</strong> satyamjha328@gmail.com</p>
+        <p><strong>LinkedIn:</strong> linkedin.com/in/satyamjha328</p>
+        <p><strong>Languages:</strong> English, Hindi, Marathi</p>
     </div>
-  </footer>
+</section>
 
-  <script src="scripts/script.js"></script>
+<footer>
+    <p>© 2026 Satyam Jha. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
